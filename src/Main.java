@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -11,19 +12,10 @@ public class Main {
         fruits.add("Dragonfruit");
         fruits.add("Mango");
 
-        //  for(int i = 0; i < fruits.size(); i++) {
-        //  System.out.println(fruits.get(i));
-        //  }
 
 
-        for(String fruit: fruits) {
-            System.out.println(fruit);
-        }
-
-        Iterator<String> it = fruits.iterator();
-        while (it.hasNext()) {
-            String item = it.next();
-            System.out.println(item);
+        if (fruits.contains("Apple")) {
+            System.out.println("Apple은 포함되어 있습니다.");
         }
     }
 }
